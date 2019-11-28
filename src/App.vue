@@ -1,18 +1,28 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+    <h1>Vue Composition API</h1>
+    <h2>Setup</h2>
+    <Setup name="soarflat" color="red" type="fire" />
+    <h2>Props and Emit</h2>
+    <PropsAndEmit />
+    <h2>Composition</h2>
+    <Composition />
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
 import HelloWorld from "./components/HelloWorld.vue";
+import Setup from "./components/Setup.vue";
+import PropsAndEmit from "./components/PropsAndEmit.vue";
+import Composition from "./components/Composition.vue";
 
 export default Vue.extend({
   name: "app",
   components: {
-    HelloWorld
+    Setup,
+    PropsAndEmit,
+    Composition
   }
 });
 </script>
